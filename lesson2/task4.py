@@ -9,5 +9,11 @@ for i in range(len(arr)):
     print(f'{i + 1}. {word if len(word) < 11 else word[:10]}')
 
 
+# string = input('Введите несколько слов через пробелы: ')
+#
+# for i, word in enumerate(string, 1):
+#     print(f'{i}, {word[:10]}')
+
+
 
 

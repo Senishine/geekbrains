@@ -10,14 +10,11 @@ while True:
         continue
     elif n == 0:
         break
-    index = -1
+    index = len(my_list)
     for i in range(len(my_list)):
         if n > my_list[i]:
             index = i
             break
-    if index == -1:
-        my_list.append(n)
-    else:
-        my_list.insert(index, n)
+    my_list.insert(index, float(n))
 
     print(f'{my_list}')
