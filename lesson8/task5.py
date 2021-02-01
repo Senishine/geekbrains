@@ -11,6 +11,7 @@ class Item:
         return f'[count={self.count}, name={self.office_eq.name}, price={self.office_eq.price}, ' \
                f'make={self.office_eq.make}, model={self.office_eq.model}]'
 
+
 class Storage:
     def __init__(self):
         self._dict = {}

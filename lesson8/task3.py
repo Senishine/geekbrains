@@ -23,8 +23,7 @@ while True:
         if data.isdigit():
             nums.append(int(data))
         else:
-            ex = IntException('Вы ввели не число', data)
-            raise ex
+            raise IntException('Вы ввели не число', data)
     except IntException as err:
         print('Некорректный ввод', err.value)
 print(nums)
