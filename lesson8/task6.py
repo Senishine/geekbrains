@@ -10,7 +10,7 @@ def check_valid_str(s: str):
 
 
 def check_price(price) -> float:
-    if not isinstance(price, float) or float(price) <= 0:
+    if (not isinstance(price, float) and not isinstance(price, int)) or float(price) <= 0:
         raise ValueError('Invalid price')
     return price
 
