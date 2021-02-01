@@ -3,23 +3,20 @@
 # Подсказка: постарайтесь по возможности реализовать в проекте «Склад оргтехники» максимум возможностей, изученных на
 # уроках по ООП.
 
-import numbers
-
-
 def check_valid_str(s: str):
     if s is None or len(s) == 0:
         raise ValueError('Invalid string')
     return s
 
 
-def check_price(price):
-    if not isinstance(price, numbers.Number) or float(price) <= 0:
+def check_price(price) -> float:
+    if not isinstance(price, float) or float(price) <= 0:
         raise ValueError('Invalid price')
     return price
 
 
 def check_count(count) -> int:
-    if not isinstance(count, numbers.Number) or int(count) <= 0:
+    if not isinstance(count, int) or int(count) <= 0:
         raise ValueError(f'Invalid count [value={count}]')
     return count
 
